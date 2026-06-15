@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-playwright-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALITOS2021/proyecto-playwright-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ALITOS2021/proyecto-playwright-ts/issues"
+  },
+  "homepage": "https://github.com/ALITOS2021/proyecto-playwright-ts#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3"
+  }
+}
