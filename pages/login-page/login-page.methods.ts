@@ -1,4 +1,4 @@
-import {Page} from 'playwright'
+import {Page} from '@playwright/test'
 import {LoginPageElements} from './login-page.elements'
 
 export class LoginPageMethods {
