@@ -1,5 +1,6 @@
 import { Page } from "@playwright/test";
 import { CartPageElements } from "./cart-page.elements";
+import { Logger } from "../../support/logger";
 
 export class CartPageMethods {
     private page: Page
@@ -10,12 +11,15 @@ export class CartPageMethods {
     }
 
     async clickOnContinueShoppingButton() {
+        await Logger.logStep('Click on continuo Shopping button')
         await this.cartPageElements.buttons.continueShopping.click()
     }
     async clicOnCheckoutButton(){
+        await Logger.logStep('Click on Checkout button')
         await this.cartPageElements.buttons.checkout.click();
     }
     async clickOnRemoveButton(productName: string){
+        `Click on Remove button for ${productName}`
         await this.cartPageElements.removeButton(productName).click()
     }
 }

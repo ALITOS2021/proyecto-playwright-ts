@@ -12,10 +12,10 @@ test('login', async ({ page }) => {
     const loginPageMethods = new LoginPageMethods(page)
     const productsPageMethods = new ProductsPageMethods(page)
     const cartPageMethods = new CartPageMethods(page)
-    await Logger.logStep('Navigate to the aplication')
+/*     await Logger.logStep('Navigate to the aplication')
     await Logger.logVerification('Verification')
     await Logger.logPreCondition('Precondition')
-    await Logger.logPostCondition('Poscondition')
+    await Logger.logPostCondition('Poscondition') */
     await commonPageMethods.navigateToTheAplication()
     await loginPageMethods.insertUsername(userCredentials.usernames.standardUser)
     await loginPageMethods.insertPassword(userCredentials.password)
