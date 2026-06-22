@@ -4,6 +4,7 @@ import { LoginPageMethods } from '../pages/login-page/login-page.methods'
 import { LoginPageData } from '../pages/login-page/login-page.data'
 import { ProductsPageMethods } from '../pages/products-page/products-page.methods';
 import { CartPageMethods } from '../pages/cart-page/cart-page.methods';
+import { Logger } from '../support/logger';
 
 const userCredentials = LoginPageData.credentials;
 test('login', async ({ page }) => {
@@ -11,11 +12,15 @@ test('login', async ({ page }) => {
     const loginPageMethods = new LoginPageMethods(page)
     const productsPageMethods = new ProductsPageMethods(page)
     const cartPageMethods = new CartPageMethods(page)
+    await Logger.logStep('Navigate to the aplication')
+    await Logger.logVerification('Verification')
+    await Logger.logPreCondition('Precondition')
+    await Logger.logPostCondition('Poscondition')
     await commonPageMethods.navigateToTheAplication()
     await loginPageMethods.insertUsername(userCredentials.usernames.standardUser)
     await loginPageMethods.insertPassword(userCredentials.password)
     await loginPageMethods.clickOnLoginButton()
-    await productsPageMethods.clickOnAddToCart('Sauce Labs Backpack5')
+    await productsPageMethods.clickOnAddToCart('Sauce Labs Backpack')
     await productsPageMethods.clickOnCartIcon()
     await cartPageMethods.clicOnCheckoutButton()
     // await cartPageMethods.clickOnContinueShoppingButton()
