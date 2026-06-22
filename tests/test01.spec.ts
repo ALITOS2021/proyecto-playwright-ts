@@ -15,7 +15,7 @@ test('login', async ({ page }) => {
     await loginPageMethods.insertUsername(userCredentials.usernames.standardUser)
     await loginPageMethods.insertPassword(userCredentials.password)
     await loginPageMethods.clickOnLoginButton()
-    await productsPageMethods.clickOnAddToCart('Sauce Labs Backpack')
+    await productsPageMethods.clickOnAddToCart('Sauce Labs Backpack5')
     await productsPageMethods.clickOnCartIcon()
     await cartPageMethods.clicOnCheckoutButton()
     // await cartPageMethods.clickOnContinueShoppingButton()
