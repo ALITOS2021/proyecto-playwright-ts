@@ -24,5 +24,6 @@ export class CheckoutOverviewPageMethods {
         await Logger.logVerification('the Checkout overView page should be displayed')
         const elementsCount= await this.checkoutOverviewPageElements.otherElements.pageTitle.count()
         expect(elementsCount).toEqual(1)
+        //FIN
     }
 }
