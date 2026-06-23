@@ -17,7 +17,6 @@ test.describe('Checkout', ()=>{
         const checkoutProductsMetdos = new CheckoutPageMethods(page)
         const checkoutPageMethods = new CheckoutPageMethods(page)
         const checkoutOverviewPageMethods = new CheckoutOverviewPageMethods(page)
-
         const productName = 'Sauce Labs Onesie'
                 
         await Logger.logPreCondition('User has items in cart')
