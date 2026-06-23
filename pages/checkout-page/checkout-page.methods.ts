@@ -17,7 +17,7 @@ export class CheckoutPageMethods {
     }
     async insertLastName(lastName: string) {
         await Logger.logStep(`Insert "${lastName}" as lastName`)
-        await this.checkoutPageElements.inputs.firstName.fill(lastName)
+        await this.checkoutPageElements.inputs.lastName.fill(lastName)
     }
 
     async insertPostalCode(postalCode: string) {

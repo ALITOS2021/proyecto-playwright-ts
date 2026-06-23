@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","15767","Checkout process","","2026-06-23","passed","2026-06-23","Checkout","checkout.spec.ts","",""

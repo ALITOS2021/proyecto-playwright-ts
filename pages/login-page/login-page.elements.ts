@@ -19,4 +19,10 @@ export class LoginPageElements {
         }
 
     }
+
+    get otherElements(){
+        return{
+            errorMessage: this.page.locator('[data-test="error"]')
+        }
+    }
 }

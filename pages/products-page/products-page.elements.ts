@@ -10,7 +10,11 @@ export class ProductsPageElements {
             cart: this.page.locator('#shopping_cart_container')
         }
     }
-
+    get otherElements (){
+        return{
+            pageTitle: this.page.locator('.title')
+        }
+    }
     addCartButton(productName: string) { return this.page.locator(`//div[.="${productName}"]//ancestor::div[@class="inventory_item"]//button`) }
 
 }

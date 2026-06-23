@@ -13,4 +13,10 @@ export class CheckoutOverviewPageElements {
 
         }
     }
+
+    get otherElements(){
+        return{
+            pageTitle: this.page.locator('[data-test="secondary-header"]')
+        }
+    }
 }
