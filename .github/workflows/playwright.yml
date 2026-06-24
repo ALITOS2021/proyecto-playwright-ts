@@ -27,3 +27,9 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 24
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
